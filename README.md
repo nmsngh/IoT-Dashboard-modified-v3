@@ -7,6 +7,14 @@ node.js 20.x
 ```
 $ npm install
 ```
+### Setting Project
+```
+.env 파일에서 serverURL 을 tinyIoT의 주소로 변경
+
+npm install react-leaflet@^4 leaflet --legacy-peer-deps
+
+npm install --save-dev @types/leaflet
+```
 ### Build project
 ```
 $ npm run build
