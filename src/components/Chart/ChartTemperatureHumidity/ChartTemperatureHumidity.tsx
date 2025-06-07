@@ -31,7 +31,7 @@ export default function ChartTemperatureHumidity({ series }: Props) {
 
   return (
     <div className="rounded-2xl border p-4 shadow-lg">
-      <div className="text-[20px] font-bold">Temperature & humidity</div>
+      <div className="text-[20px] font-bold">Temperature</div>
       <Chart
         type="area"
         height={227}
@@ -64,6 +64,7 @@ export default function ChartTemperatureHumidity({ series }: Props) {
           },
           stroke: {
             curve: 'smooth',
+            width: 1
           },
           fill: {
             type: 'gradient',
@@ -98,7 +99,7 @@ export default function ChartTemperatureHumidity({ series }: Props) {
             // min,
             // max,
             title: {
-              text: 'Amperage(A)',
+              text: 'temperature(°C)',
             },
             tooltip: {
               enabled: true,
@@ -135,7 +136,7 @@ export default function ChartTemperatureHumidity({ series }: Props) {
                 (s.data[s.data.length - 1] as { x: string; y: string | number })
                   ?.y
               }
-              A
+              °C
             </div>
           </div>
         ))}

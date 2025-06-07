@@ -57,6 +57,7 @@ export default function ChartEnergyConsumption({ series }: Props) {
           },
           stroke: {
             curve: 'smooth',
+            width: 1
           },
           xaxis: {
             min: zoomRage?.min,

@@ -63,6 +63,7 @@ export default function ChartCurrent({ series }: Props) {
           },
           stroke: {
             curve: 'linestep',
+            width: 1,
           },
           xaxis: {
             min: zoomRage?.min,
