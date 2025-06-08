@@ -7,10 +7,13 @@ node.js 20.x
 ```
 $ npm install
 ```
-### Setting Project
+### setting in env file (.env파일 수정)
 ```
-.env 파일에서 serverURL 을 tinyIoT의 주소로 변경
-
+NEXT_PUBLIC_APP_SERVER_URL={ server url } // 연결할 서버의 URL을 포트번호까지 입력한다.
+NEXT_PUBLIC_GOOGLE_MAPS_API_KEY={ google map api key } // 이 부분은 수정하지 않는다.
+```
+### install package
+```
 npm install react-leaflet@^4 leaflet --legacy-peer-deps
 
 npm install --save-dev @types/leaflet
@@ -28,8 +31,4 @@ $ npm run start
 $ npm run dev
 ```
 
-## setting in env file
-```
-NEXT_PUBLIC_APP_SERVER_URL={ server url }
-NEXT_PUBLIC_GOOGLE_MAPS_API_KEY={ google map api key }
-```
+
