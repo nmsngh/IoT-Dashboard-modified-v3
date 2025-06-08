@@ -31,7 +31,7 @@ export default function ChartCurrent({ series }: Props) {
 
   return (
     <div className="rounded-2xl border p-4 shadow-lg">
-      <div className="text-[20px] font-bold">Current</div>
+      <div className="text-[20px] font-bold"></div>
       <Chart
         type="line"
         height={227}

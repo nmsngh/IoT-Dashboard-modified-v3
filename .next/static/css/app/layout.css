@@ -2332,6 +2332,9 @@ html {
 .mb-2 {
   margin-bottom: 0.5rem;
 }
+.mb-4 {
+  margin-bottom: 1rem;
+}
 .mt-12 {
   margin-top: 3rem;
 }
@@ -2343,9 +2346,6 @@ html {
 }
 .mt-\[12px\] {
   margin-top: 12px;
-}
-.mb-4 {
-  margin-bottom: 1rem;
 }
 .block {
   display: block;
@@ -2383,9 +2383,6 @@ html {
 .h-\[90px\] {
   height: 90px;
 }
-.h-\[300px\] {
-  height: 300px;
-}
 .w-3 {
   width: 0.75rem;
 }
@@ -2413,20 +2410,23 @@ html {
 .w-full {
   width: 100%;
 }
-.min-w-\[1480px\] {
-  min-width: 1480px;
+.min-w-\[500px\] {
+  min-width: 500px;
 }
 .min-w-\[75px\] {
   min-width: 75px;
 }
-.min-w-\[500px\] {
-  min-width: 500px;
+.min-w-\[200px\] {
+  min-width: 200px;
 }
 .max-w-\[1480px\] {
   max-width: 1480px;
 }
 .max-w-\[1800px\] {
   max-width: 1800px;
+}
+.max-w-screen-xl {
+  max-width: 1280px;
 }
 .flex-1 {
   flex: 1 1 0%;
@@ -2440,17 +2440,14 @@ html {
 .cursor-pointer {
   cursor: pointer;
 }
-.grid-cols-3 {
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+.grid-cols-1 {
+  grid-template-columns: repeat(1, minmax(0, 1fr));
 }
 .grid-cols-4 {
   grid-template-columns: repeat(4, minmax(0, 1fr));
 }
 .grid-cols-7 {
   grid-template-columns: repeat(7, minmax(0, 1fr));
-}
-.grid-cols-1 {
-  grid-template-columns: repeat(1, minmax(0, 1fr));
 }
 .flex-col {
   flex-direction: column;
@@ -2511,11 +2508,8 @@ html {
 .border-0 {
   border-width: 0px;
 }
-.border-b-\[1px\] {
+.border-b {
   border-bottom-width: 1px;
-}
-.border-solid {
-  border-style: solid;
 }
 .border-gray-200 {
   --tw-border-opacity: 1;
@@ -2554,9 +2548,17 @@ html {
 .p-4 {
   padding: 1rem;
 }
+.px-0\.5 {
+  padding-left: 0.125rem;
+  padding-right: 0.125rem;
+}
 .px-2 {
   padding-left: 0.5rem;
   padding-right: 0.5rem;
+}
+.px-4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 .px-5 {
   padding-left: 1.25rem;
@@ -2577,18 +2579,6 @@ html {
 .py-4 {
   padding-top: 1rem;
   padding-bottom: 1rem;
-}
-.px-4 {
-  padding-left: 1rem;
-  padding-right: 1rem;
-}
-.px-1 {
-  padding-left: 0.25rem;
-  padding-right: 0.25rem;
-}
-.px-0\.5 {
-  padding-left: 0.125rem;
-  padding-right: 0.125rem;
 }
 .pl-3 {
   padding-left: 0.75rem;
@@ -2720,20 +2710,6 @@ html {
 @media (min-width: 640px) {
 
   .sm\:grid-cols-2 {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-
-  .sm\:grid-cols-1 {
-    grid-template-columns: repeat(1, minmax(0, 1fr));
-  }
-}
-@media (min-width: 768px) {
-
-  .md\:grid-cols-3 {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-  }
-
-  .md\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }

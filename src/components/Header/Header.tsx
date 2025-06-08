@@ -54,19 +54,22 @@ export default function Header() {
 
   return (
     <>
-      <div className="min-w-[1480px] border-b-[1px] border-solid border-gray-200">
-        <header className="navbar z-50 mx-auto flex h-[90px] w-[1480px] justify-between bg-white">
-          <div className="flex items-center gap-[17px]">
-            <HeaderLogo />
-          </div>
-          <div className="flex items-center">
-            <IoMdSettings
-              className="h-8 w-8 cursor-pointer hover:text-gray-600"
-              onClick={() => modal?.showModal()}
-            />
-          </div>
-        </header>
-      </div>
+      <div className="w-full border-b border-gray-200">
+  <header className="navbar z-50 flex h-[90px] w-full justify-between bg-white px-4">
+   
+    <div className="flex items-center gap-[17px]">
+      <HeaderLogo />
+    </div>
+   
+    <div className="flex items-center">
+      <IoMdSettings
+        className="h-8 w-8 cursor-pointer hover:text-gray-600"
+        onClick={() => modal?.showModal()}
+      />
+    </div>
+  </header>
+</div>
+
       <dialog id="my_modal_1" className="modal" ref={modalRef}>
         <div className="modal-box">
           <h3 className="text-lg font-bold">Setting</h3>

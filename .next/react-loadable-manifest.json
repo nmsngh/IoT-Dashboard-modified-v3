@@ -17,6 +17,12 @@
       "static/chunks/_app-pages-browser_src_components_Map_tsx.js"
     ]
   },
+  "app\\device\\[deviceName]\\page.tsx -> @/components/Map": {
+    "id": "app\\device\\[deviceName]\\page.tsx -> @/components/Map",
+    "files": [
+      "static/chunks/_app-pages-browser_src_components_Map_tsx.js"
+    ]
+  },
   "components\\Chart\\ChartCurrent\\ChartCurrent.tsx -> react-apexcharts": {
     "id": "components\\Chart\\ChartCurrent\\ChartCurrent.tsx -> react-apexcharts",
     "files": [
